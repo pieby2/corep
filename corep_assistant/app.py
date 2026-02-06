@@ -52,6 +52,7 @@ def main():
         api_key = None
         if "Groq" in model:
             api_key = st.text_input("Groq API Key", type="password", placeholder="gsk_...")
+            st.markdown("[Get your Groq API Key here](https://console.groq.com/keys)")
             if not api_key:
                 st.warning("Please enter your Groq API Key.")
         
